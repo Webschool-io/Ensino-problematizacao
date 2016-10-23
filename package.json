@@ -25,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/Webschool-io/Ensino-via-testes/issues"
   },
-  "homepage": "https://github.com/Webschool-io/Ensino-via-testes#readme"
+  "homepage": "https://github.com/Webschool-io/Ensino-via-testes#readme",
+  "dependencies": {
+    "chai": "^3.5.0"
+  }
 }
