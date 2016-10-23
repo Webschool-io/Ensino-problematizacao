@@ -1,0 +1,29 @@
+{
+  "name": "learning-by-testing",
+  "version": "1.0.0",
+  "description": "noisss",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha math.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Webschool-io/Ensino-via-testes.git"
+  },
+  "keywords": [
+    "Suissa",
+    "webschool",
+    "math",
+    "matemática",
+    "tdd",
+    "mocha",
+    "expect",
+    "bdd"
+  ],
+  "author": "Suissa",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/Webschool-io/Ensino-via-testes/issues"
+  },
+  "homepage": "https://github.com/Webschool-io/Ensino-via-testes#readme"
+}
