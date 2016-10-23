@@ -1,45 +1,32 @@
 const expect = require('chai').expect
 
-const type = 'acid'
+// https://pt.wikipedia.org/wiki/Fatorial
 
-// base = sal + H2O
-// metal = sal
+const fatorial = (numero) => {
 
-const reagir = (type) => {
-  switch (type) {
-    case 'base': 
-      return ['sal', 'H2O']
-      break
-    case 'metal': 
-      return ['sal']
-      break
-  }
-}
-const Acid = {
-  reagir
+  return
 }
 
-describe('Ácido reagindo com Base',  () => {
-  it('Resultado deve retornar 2 elementos', () => {
-    const type = 'base'
-    expect(Acid.reagir(type)).to.have.length(2)
+describe('Fatorial',  () => {
+  it('O fatorial de 5 deve ser 120', () => {
+    const resultado = fatorial(5)
+    expect(resultado).not.to.be.NaN
+    expect(resultado).to.equal(120)
+
   })
-  it('Resultado deve conter apenas sal + H2O', () => {
-    const type = 'base'
-    const result = ['sal', 'H2O']
-    expect(Acid.reagir(type)).to.eql(['sal', 'H2O'])
+  it('O fatorial de 4 deve ser 24', () => {
+    const resultado = fatorial(4)
+    expect(resultado).not.to.be.NaN
+    expect(resultado).to.equal(24)
   })
-})
-describe('Ácido reagindo com Metal',  () => {
-  it('Deve retornar sal', () => {
-    const type = 'metal'
-    const result = ['sal']
-    expect(Acid.reagir(type)).to.have.length(1)
-    expect(Acid.reagir(type)).to.contain('sal')
+  it('O fatorial de 3 deve ser 6', () => {
+    const resultado = fatorial(3)
+    expect(resultado).not.to.be.NaN
+    expect(resultado).to.equal(6)
   })
-  it('Não pode retornar nada diferente de sal', () => {
-    const type = 'metal'
-    const result = ['sal']
-    expect(Acid.reagir(type)).to.contain('sal', 'H2O')
+  it('O fatorial de 2 deve ser 2', () => {
+    const resultado = fatorial(2)
+    expect(resultado).not.to.be.NaN
+    expect(resultado).to.equal(2)
   })
 })
