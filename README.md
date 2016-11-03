@@ -9,4 +9,5 @@ Você terá o "enunciado" do problema e suas soluções, então deverá criar o 
 - forke esse repositório
 - clone na sua máquina
 - instale o Mocha globalmente com `npm i -g mocha`
-- instale o Chai com `npm i -S chai` 
+- instale o Chai com `npm i -S chai`
+- execute: `mocha math.js`
