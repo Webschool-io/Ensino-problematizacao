@@ -3,7 +3,7 @@ const expect = require('chai').expect
 // https://pt.wikipedia.org/wiki/Fatorial
 
 const fatorial = (numero) => {
-
+  // AQUI VOCE ESCREVE O RESTO DA FUNÇÃO!!!
   return
 }
 
