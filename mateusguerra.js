@@ -5,7 +5,7 @@ const expect = require('chai').expect
 const fatorial = (numero) => {
   let result = 1;
   while (numero) {
-    result = result * numero;
+    result *= numero;
     numero --;
   }
   return result;
