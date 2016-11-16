@@ -29,4 +29,9 @@ describe('Fatorial',  () => {
     expect(resultado).not.to.be.NaN
     expect(resultado).to.equal(2)
   })
+  it('O fatorial de 0 deve ser 1', () => {
+    const resultado = fatorial(0)
+    expect(resultado).not.to.be.NaN
+    expect(resultado).to.equal(1)
+  })
 })
