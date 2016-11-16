@@ -3,10 +3,7 @@ const expect = require('chai').expect
 // https://pt.wikipedia.org/wiki/Fatorial
 
 const fatorial = (numero) => {
-  if (numero > 2)
-    return (numero * fatorial(numero-1))
-  else
-    return (numero===2) ? 2 : 1
+    return (!numero) ? 1 : (numero * fatorial(numero-1))
 }
 
 describe('Fatorial',  () => {
