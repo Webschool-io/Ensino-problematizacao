@@ -4,7 +4,13 @@ Nesse repositório tentarei ensinar conteúdos avulsos porém utilizando testes/
 
 Você terá o "enunciado" do problema e suas soluções, então deverá criar o a função que faça esse meio de caminho.
 
-## Como rodar
+## Problema: Fatorial
+
+Você terá que implementar a função do fatorial para que ela passe nos testes já definidos.
+
+[math.js](https://github.com/Webschool-io/Ensino-problematizacao/blob/master/math.js)
+
+### Como rodar
 
 - forke esse repositório
 - clone na sua máquina
@@ -13,7 +19,7 @@ Você terá o "enunciado" do problema e suas soluções, então deverá criar o 
 - execute: `mocha math.js`
 
 
-## Como enviar
+### Como enviar
 
 - salve seu resultado como `seu-githubuser.js`
 - crie um PULL REQUEST across forks

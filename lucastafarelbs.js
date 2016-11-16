@@ -3,11 +3,19 @@ const expect = require('chai').expect
 // https://pt.wikipedia.org/wiki/Fatorial
 
 const fatorial = (numero) => {
-  // AQUI VOCE ESCREVE O RESTO DA FUNÇÃO!!!
-  return
+  if (numero > 2)
+    return (numero * fatorial(numero-1))
+  else
+    return (numero===2) ? 2 : 1
 }
 
 describe('Fatorial',  () => {
+  it('O fatorial de 1 deve ser 1', () => {
+    const resultado = fatorial(1)
+    expect(resultado).not.to.be.NaN
+    expect(resultado).to.equal(1)
+
+  })
   it('O fatorial de 5 deve ser 120', () => {
     const resultado = fatorial(5)
     expect(resultado).not.to.be.NaN
@@ -28,10 +36,5 @@ describe('Fatorial',  () => {
     const resultado = fatorial(2)
     expect(resultado).not.to.be.NaN
     expect(resultado).to.equal(2)
-  })
-  it('O fatorial de 0 deve ser 1', () => {
-    const resultado = fatorial(0)
-    expect(resultado).not.to.be.NaN
-    expect(resultado).to.equal(1)
   })
 })
