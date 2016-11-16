@@ -2,9 +2,7 @@ const expect = require('chai').expect
 
 // https://pt.wikipedia.org/wiki/Fatorial
 
-const fatorial = (numero) => {
-    return (!numero) ? 1 : (numero * fatorial(numero-1))
-}
+const fatorial = (numero) => (!numero) ? 1 : (numero * fatorial(numero-1))
 
 describe('Fatorial',  () => {
   it('O fatorial de 1 deve ser 1', () => {
