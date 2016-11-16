@@ -1,4 +1,3 @@
-``` javascript
 const expect = require('chai').expect;
 
 const fatorial = (numero) => {
@@ -11,4 +10,3 @@ const fatorial = (numero) => {
 
 	return resultado;
 };
-```
