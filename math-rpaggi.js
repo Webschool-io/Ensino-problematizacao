@@ -3,10 +3,11 @@ const expect = require('chai').expect
 // https://pt.wikipedia.org/wiki/Fatorial
 
 const fatorial = (numero) => {
-  fat = numero
-  for(i = numero-1; i > 1; i--){
-    fat *= i
-  }
+  var fat = numero
+  
+  for(fat = 1; numero > 1; numero--)
+    fat *= numero;
+  
   return fat
 }
 
@@ -37,5 +38,15 @@ describe('Fatorial',  () => {
     const resultado = fatorial(2)
     expect(resultado).not.to.be.NaN
     expect(resultado).to.equal(2)
+  })
+  it('O fatorial de 1 deve ser 1', () => {
+    const resultado = fatorial(1)
+    expect(resultado).not.to.be.NaN
+    expect(resultado).to.equal(1)
+  })
+  it('O fatorial de 0 deve ser 1', () => {
+    const resultado = fatorial(0)
+    expect(resultado).not.to.be.NaN
+    expect(resultado).to.equal(1)
   })
 })
