@@ -1,14 +1,3 @@
-const fatorial = (numero) => {
-   
-   let result = 1;
-   while (numero) {
-         result *= numero;
-         numero = numero - 1;
-                              }
-   return result;
-}
-
-
 const expect = require('chai').expect
 
 // https://pt.wikipedia.org/wiki/Fatorial
