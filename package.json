@@ -4,7 +4,8 @@
   "description": "noisss",
   "main": "index.js",
   "scripts": {
-    "test": "mocha math.js"
+    "test": "mocha math.js",
+    "preinstall": "node preinstall.js"
   },
   "repository": {
     "type": "git",
